@@ -44,6 +44,13 @@ main {
     background-color: rgb(255, 255, 157);
     height: 200px;
     margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectScreenshot {
+    height: 90%;
 }
 
 footer {
