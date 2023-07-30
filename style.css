@@ -50,10 +50,19 @@ main {
 }
 
 .projectScreenshot {
-    height: 90%;
+    height: 100%;
 }
 
 footer {
     background-color: rgb(185, 245, 184);
-    height: 300px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footerImg {
+    justify-self: center;
+    align-self: center;
+    height: 400px;
+    /* object-fit: contain; */
 }
