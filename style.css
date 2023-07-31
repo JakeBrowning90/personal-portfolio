@@ -2,22 +2,37 @@ html, body {
     /* height:100%; */
     /* min-width: 500px; */
     max-width: 1000px;
-    background-color: rgb(198, 255, 255);
+    background-color: rgb(178, 178, 178);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: auto;
+    gap: 10px;
+}
+
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
 }
 
 header {
     background-color: rgb(245, 184, 184);
-    background-image: url(img/fullHeadshot.jpg);
-    background-size: 100%;
+    /* background-image: url(img/fullHeadshot.jpg);
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: left; */
     height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.headerPhoto {
+    background-image: url(img/croppedHeadshot.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
 header > * {
@@ -30,23 +45,36 @@ header > * {
 
 .headerText {
     background-color: rgba(255, 255, 255, 0.861);
-    margin: auto
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    gap: 10px;
 }
 
 main {
-    background-color: rgb(228, 228, 228);
+    /* background-color: rgb(228, 228, 228); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* padding: 10px; */
+    gap: 10px;
 }
 
 .projectEntry {
     background-color: rgb(255, 255, 157);
     height: 200px;
-    margin: 10px;
     padding: 10px;
+    gap: 10px;
     display: flex;
     flex-direction: row;
+}
+
+.projectHeaderRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 .projectScreenshot {
@@ -55,7 +83,8 @@ main {
 
 footer {
     background-color: rgb(185, 245, 184);
-    height: 500px;
+    /* height: 500px; */
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -63,6 +92,24 @@ footer {
 .footerImg {
     justify-self: center;
     align-self: center;
-    height: 400px;
+    width: 90%;
     /* object-fit: contain; */
+}
+
+@media (max-width: 500px){
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-image: none;
+    }
+    .headerPhoto {
+        background-image: url(img/croppedHeadshot.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
