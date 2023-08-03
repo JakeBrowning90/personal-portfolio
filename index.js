@@ -1,11 +1,11 @@
 let projectsList = [
-    {"title": "I Spy", "repoLink":"https://github.com/JakeBrowning90/wheres-wally", "liveLink":"https://jakebrowning90.github.io/wheres-wally/", "thumbnail":"img/ispyThumbnail.jpg", "desc":"A hidden object game built with JavaScript and an online scoreboard in Cloud Firestore."},
-    {"title": "Memory Cards", "repoLink":"", "liveLink":"", "thumbnail":"img/memoryThumbnail.jpg", "desc":""},
-    {"title": "CV Builder", "repoLink":"", "liveLink":"", "thumbnail":"img/cvBuilderThumbnail.jpg", "desc":""},
-    {"title": "Battleship", "repoLink":"", "liveLink":"", "thumbnail":"img/battleshipThumbnail.jpg", "desc":""},
-    {"title": "Weather App", "repoLink":"", "liveLink":"", "thumbnail":"img/weatherThumbnail.jpg", "desc":""},
-    {"title": "To-Do List", "repoLink":"", "liveLink":"", "thumbnail":"img/kiwi.jpg", "desc":""},
-    {"title": "Tic-Tac-Toe", "repoLink":"", "liveLink":"", "thumbnail":"img/tictactoeThumbnail.jpg", "desc":""},
+    {"title": "I Spy", "repoLink":"https://github.com/JakeBrowning90/i-spy", "liveLink":"https://jakebrowning90.github.io/i-spy/", "thumbnail":"img/ispyThumbnail.jpg", "desc":"A hidden-object game built with JavaScript and an online scoreboard in Cloud Firestore. Locate every item as fast as possible to join the scoreboard."},
+    {"title": "Memory", "repoLink":"", "liveLink":"", "thumbnail":"img/memoryThumbnail.jpg", "desc":"A React card game. Select all 25 cards without repeating yourself. Be careful: the cards move to new locations after each selection."},
+    {"title": "CV Builder", "repoLink":"", "liveLink":"", "thumbnail":"img/cvBuilderThumbnail.jpg", "desc":"A React app for building and editing a CV. Collapsable forms allow input for a header, education, and work experience components. "},
+    {"title": "Battleship", "repoLink":"", "liveLink":"", "thumbnail":"img/battleshipThumbnail.jpg", "desc":"The classic board game in JavaScript, playable by 1 or 2 players. Place ships manually or automatically, and be the first to sink the opposing fleet."},
+    {"title": "Weather", "repoLink":"", "liveLink":"", "thumbnail":"img/weatherThumbnail.jpg", "desc":"Check the weather in more than 200,000 cities using the OpenWeather API. You can also toggle between metric imperial measurements."},
+    {"title": "To-Do List", "repoLink":"", "liveLink":"", "thumbnail":"img/kiwi.jpg", "desc":"Add, categorize, edit, and delete tasks on a personal list. The list also persists on a user’s machine using the localStorage property."},
+    {"title": "Tic-Tac-Toe", "repoLink":"", "liveLink":"", "thumbnail":"img/tictactoeThumbnail.jpg", "desc":"Play a JavaScript version of the old-fashioned game against your friend."},
 ];
 
 function showProjects() {
@@ -46,7 +46,7 @@ function showProjects() {
         projectCard.appendChild(projectHeading);
         projectHeading.appendChild(projectTitle);
         projectHeading.appendChild(repoLink);
-        projectHeading.appendChild(liveLink);
+        // projectHeading.appendChild(liveLink);
         // projectCard.appendChild(projectTitle);
         // projectCard.appendChild(repoLink);
         // projectCard.appendChild(liveLink);
@@ -57,4 +57,10 @@ function showProjects() {
     }
 }
 
+function writeBio() {
+    const bioText = document.querySelector(".bioText");
+    bioText.textContent = "I want to work in web development. Pay me!";
+}
+
+writeBio()
 showProjects();
