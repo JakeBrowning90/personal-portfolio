@@ -34,6 +34,10 @@ header {
     padding-left: 10px;
 }
 
+.githubLogo {
+    height: 30px;
+}
+
 .projectTitle {
     /* font-size: 25px; */
 }

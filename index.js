@@ -29,13 +29,18 @@ function showProjects() {
         repoLink.setAttribute("href", projectsList[project].repoLink)
         repoLink.setAttribute("target", "_blank")
         repoLink.setAttribute("rel", "noopener noreferrer")
-        repoLink.textContent = "View repo";
+        // repoLink.textContent = "View repo";
+        let githubLogo = document.createElement("img");
+        githubLogo.classList.add("githubLogo");
+        githubLogo.setAttribute("src", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
 
-        let liveLink = document.createElement("a");
-        liveLink.setAttribute("href", projectsList[project].liveLink)
-        liveLink.setAttribute("target", "_blank")
-        liveLink.setAttribute("rel", "noopener noreferrer")
-        liveLink.textContent = "View live";
+
+
+        // let liveLink = document.createElement("a");
+        // liveLink.setAttribute("href", projectsList[project].liveLink)
+        // liveLink.setAttribute("target", "_blank")
+        // liveLink.setAttribute("rel", "noopener noreferrer")
+        // liveLink.textContent = "View live";
 
         let projectThumbnail = document.createElement("img");
         projectThumbnail.setAttribute("src", projectsList[project].thumbnail);
@@ -46,6 +51,7 @@ function showProjects() {
         projectCard.appendChild(projectHeading);
         projectHeading.appendChild(projectTitle);
         projectHeading.appendChild(repoLink);
+        repoLink.appendChild(githubLogo);
         // projectHeading.appendChild(liveLink);
         // projectCard.appendChild(projectTitle);
         // projectCard.appendChild(repoLink);
