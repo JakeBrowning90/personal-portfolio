@@ -20,6 +20,7 @@ header {
 .projectCard {
     /* display: flex;
     flex-direction: column; */
+    background-color: rgb(118, 178, 231);
     display: grid;
     grid-template-columns: 100px 1fr;
     grid-template-rows: 100px 1fr;
@@ -30,7 +31,7 @@ header {
 
 .projectHeading {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .projectTitle {
