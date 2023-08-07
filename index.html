@@ -8,18 +8,21 @@
     <script src="index.js" defer></script>
     <title>Jake Browning</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div>
             <h1>Jake Browning</h1>
             <h2>Junior Web Developer</h2> 
         </div>
-        <nav>
-            <a href="#aboutHeader">About Me</a> |
-            <a href="#projectsHeader">Projects</a> |
-            <a href="#educationHeader">Education</a> |
-            <a href="#contactHeader">Contact</a> 
-        </nav>
+        <div class="headerControls">
+            <button class="styleToggle">Light/Dark</button>
+            <nav>
+                <a href="#aboutHeader">About Me</a> |
+                <a href="#projectsHeader">Projects</a> |
+                <a href="#educationHeader">Education</a> |
+                <a href="#contactHeader">Contact</a> 
+            </nav>
+        </div>
     </header>
 
     <hr />
@@ -70,9 +73,17 @@
 
     <footer>
         <h1 id="contactHeader">Contact</h1>
-        <p>Email</p>
-        <p>LinkedIn</p>
-        <p>Github</p>
+        <p>Interested in working together? Feel free to email me or contact me on social media.</p>
+        <p>Email: <a href="mailto:jacobbrowning90@gmail.com">jacobbrowning@gmail.com</a></p>
+        <div class="socialBar">
+            <a href="https://github.com/JakeBrowning90">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github logo" class="githubLogo">
+            </a>
+            <a href="https://www.linkedin.com/in/jacob-browning-4163346a/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn logo" class="githubLogo" />
+            </a>
+        </div>
+       
     </footer>
 </body>
 </html>

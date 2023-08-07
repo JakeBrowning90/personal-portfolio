@@ -8,7 +8,7 @@ let projectsList = [
     {"title": "Tic-Tac-Toe", "repoLink":"https://github.com/JakeBrowning90/tic-tac-toe", "liveLink":"https://jakebrowning90.github.io/tic-tac-toe/", "thumbnail":"img/tictactoeThumbnail.jpg", "desc":"Play a JavaScript version of the old-fashioned game against your friend."},
 ];
 
-function showProjects() {
+const  showProjects = () => {
     const projectsDisplay = document.querySelector(".projectsDisplay");
     for (const project in projectsList) {
         let projectCard = document.createElement("div");
@@ -60,4 +60,12 @@ function showProjects() {
     }
 }
 
+const swapStyles = () => {
+    console.log("Swap!")
+    const body = document.getElementById("body");
+    body.classList.toggle("darkTheme");
+}
+
+const styleToggle = document.querySelector(".styleToggle")
+styleToggle.addEventListener("click", swapStyles);
 showProjects();

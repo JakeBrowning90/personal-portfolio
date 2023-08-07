@@ -7,6 +7,12 @@ html, body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     padding: 10px;
     scroll-behavior: smooth;
+    /* background-color: white; */
+}
+
+.darkTheme {
+    color: white;
+    background-color: #121212 ;
 }
 
 nav {
@@ -29,7 +35,13 @@ header {
     justify-content: space-between;
 }
 
-.bioText {
+.headerControls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bioText, footer {
     max-width: 800px;
     white-space: pre-line;
 }
@@ -41,7 +53,7 @@ header {
     grid-template-columns: 100px 1fr;
     /* grid-template-rows: 30px 70px; */
     grid-template-rows: 30px 1fr;
-    margin: 15px 0 0 0;
+    margin-top: 15px;
 }
 
 .projectHeading {
@@ -82,7 +94,7 @@ header {
 }
 
 .educationEntry {
-    margin-top: 10px;
+    margin-top: 15px;
     gap: 5px;
     background-color: #cae0ee;
     max-width: 550px;
@@ -98,4 +110,9 @@ header {
 
 .educationDates {
     width: 60px;
+}
+
+.socialBar {
+    display: flex;
+    gap: 10px;
 }
