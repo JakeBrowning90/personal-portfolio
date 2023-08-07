@@ -28,8 +28,8 @@ function showProjects() {
         let repoLink = document.createElement("a");
         repoLink.setAttribute("href", projectsList[project].repoLink)
         repoLink.setAttribute("target", "_blank")
-        repoLink.setAttribute("rel", "noopener noreferrer")
-        // repoLink.textContent = "View repo";
+        repoLink.setAttribute("rel", "noopener noreferrer");
+
         let githubLogo = document.createElement("img");
         githubLogo.classList.add("githubLogo");
         githubLogo.setAttribute("src", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
@@ -40,14 +40,12 @@ function showProjects() {
         liveLink.setAttribute("href", projectsList[project].liveLink)
         liveLink.setAttribute("target", "_blank")
         liveLink.setAttribute("rel", "noopener noreferrer")
-        // liveLink.textContent = "View live";
-
+  
         let projectThumbnail = document.createElement("img");
         projectThumbnail.setAttribute("src", projectsList[project].thumbnail);
         projectThumbnail.setAttribute("alt", projectsList[project].title + " link");
         projectThumbnail.classList.add("projectThumbnail");
 
-        // projectCard.appendChild(projectThumbnail);
         projectCard.appendChild(liveLink);
         liveLink.appendChild(projectThumbnail);
 
@@ -55,21 +53,11 @@ function showProjects() {
         projectHeading.appendChild(projectTitle);
         projectHeading.appendChild(repoLink);
         repoLink.appendChild(githubLogo);
-        // projectHeading.appendChild(liveLink);
-        // projectCard.appendChild(projectTitle);
-        // projectCard.appendChild(repoLink);
-        // projectCard.appendChild(liveLink);
+  
         projectCard.appendChild(projectDesc);
        
-        
         projectsDisplay.appendChild(projectCard);
     }
 }
 
-function writeBio() {
-    const bioText = document.querySelector(".bioText");
-    bioText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut faucibus. Diam ut venenatis tellus in metus. Quam vulputate dignissim suspendisse in est. Ac orci phasellus egestas tellus rutrum. Quis risus sed vulputate odio ut. Nisi est sit amet facilisis. Felis eget nunc lobortis mattis aliquam faucibus purus in. Cursus euismod quis viverra nibh cras pulvinar. In nibh mauris cursus mattis molestie a iaculis at erat. Semper viverra nam libero justo.";
-}
-
-writeBio()
 showProjects();

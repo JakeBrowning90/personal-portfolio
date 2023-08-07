@@ -29,6 +29,11 @@ header {
     justify-content: space-between;
 }
 
+.bioText {
+    max-width: 800px;
+    white-space: pre-line;
+}
+
 .projectCard {
     background-color: #cae0ee;
     max-width: 550px;
@@ -78,6 +83,19 @@ header {
 
 .educationEntry {
     margin-top: 10px;
+    gap: 5px;
     background-color: #cae0ee;
     max-width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.educationTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.educationDates {
+    width: 60px;
 }
