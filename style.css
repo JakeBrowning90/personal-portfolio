@@ -20,6 +20,7 @@ h1 {
 
 h2 {
     font-size: 30px;
+    /* text-decoration: underline; */
 }
 
 header {
@@ -29,8 +30,8 @@ header {
 }
 
 .projectCard {
-    background-color: rgb(224, 235, 245);
-    max-width: 500px;
+    background-color: #cae0ee;
+    max-width: 550px;
     display: grid;
     grid-template-columns: 100px 1fr;
     /* grid-template-rows: 30px 70px; */
@@ -53,8 +54,12 @@ header {
     /* font-size: 25px; */
 }
 
-.projectThumbnail {
+.liveLink {
     grid-row: 1 / -1;
+}
+
+.projectThumbnail {
+    /* grid-row: 1 / -1; */
     height: 100px;
     max-width: 100px;
     /* object-fit: contain; */
@@ -69,4 +74,10 @@ header {
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
+}
+
+.educationEntry {
+    margin-top: 10px;
+    background-color: #cae0ee;
+    max-width: 550px;
 }
