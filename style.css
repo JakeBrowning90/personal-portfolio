@@ -6,8 +6,13 @@
 html, body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     padding: 10px;
+    scroll-behavior: smooth;
 }
 
+nav {
+    margin-top: auto;
+}
+   
 h1 {
     font-size: 40px;
     font-weight: bold;

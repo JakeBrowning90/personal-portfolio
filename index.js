@@ -65,7 +65,7 @@ function showProjects() {
 
 function writeBio() {
     const bioText = document.querySelector(".bioText");
-    bioText.textContent = "I want to work in web development. Pay me!";
+    bioText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut faucibus. Diam ut venenatis tellus in metus. Quam vulputate dignissim suspendisse in est. Ac orci phasellus egestas tellus rutrum. Quis risus sed vulputate odio ut. Nisi est sit amet facilisis. Felis eget nunc lobortis mattis aliquam faucibus purus in. Cursus euismod quis viverra nibh cras pulvinar. In nibh mauris cursus mattis molestie a iaculis at erat. Semper viverra nam libero justo.";
 }
 
 writeBio()
