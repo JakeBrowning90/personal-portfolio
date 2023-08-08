@@ -39,10 +39,6 @@ const  showProjects = () => {
         repoLink.setAttribute("target", "_blank")
         repoLink.setAttribute("rel", "noopener noreferrer");
 
-        // let githubLogo = document.createElement("img");
-        // githubLogo.classList.add("githubLogo");
-        // githubLogo.setAttribute("src", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
-
         let githubLogo = document.createElement("i");
         githubLogo.classList.add("devicon-github-original");
        
@@ -72,11 +68,6 @@ const  showProjects = () => {
 const swapStyles = () => {
     const body = document.getElementById("body");
     body.classList.toggle("darkTheme");
-
-    // const githubLogo = document.querySelectorAll(".githubLogo");
-    // githubLogo.forEach(logo =>{
-    //     logo.classList.toggle("darkIcon");
-    // });
 }
 
 const extendStripes = () => {
