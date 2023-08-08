@@ -16,7 +16,7 @@ html, body {
 }
 
 a:link, a:visited {
-    /* color: black; */
+    color: black;
 }
 
 nav {
@@ -37,6 +37,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .headerControls {
@@ -53,25 +54,37 @@ header {
     gap: 1px;
 }
 
-.horiz {
+.stripeBase > * {
     flex-grow: 1;
-    width: 100%;
     align-self: flex-end;
 }
 
-.blueStripe {
+.horiz1 {
+    width: 100%;
+}
+.horiz2 {
+    width: calc(100% - 10px);;
+}
+.horiz3 {
+    width: calc(100% - 21px);;
+}
+.horiz4 {
+    width: calc(100% - 31px);;
+}
+
+.blue {
     background-color: #0039a6;
 }
 
-.orangeStripe {
+.orange {
     background-color: #ff6319;
 }
 
-.greenStripe {
+.green {
     background-color: #6cbe45;
 }
 
-.purpleStripe {
+.purple {
     background-color: #b933ad;
 }
 
@@ -83,16 +96,30 @@ header {
 .stripeBaseVert {
     align-self: stretch;
     min-width: 40px;
-    /* height: 100%; */
     display: flex;
     flex-direction: row;
     gap: 1px;
+    transform: translateY(-31px);
 }
-
-.vert {
+.stripeBaseVert > * {
     flex-grow: 1;
     justify-self: stretch;
-    /* height: 100px; */
+}
+.vert1 {
+    height: 100%;
+}
+.vert2 {
+    transform: translateY(1px);
+}
+.vert3 {
+    transform: translateY(12px);
+}
+.vert4 {
+    transform: translateY(22px);
+}
+
+.mainContent {
+    padding: 10px;
 }
 
 .bioText, footer {
@@ -106,7 +133,7 @@ header {
     display: grid;
     grid-template-columns: 100px 1fr;
     /* grid-template-rows: 30px 70px; */
-    grid-template-rows: 30px 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-top: 15px;
 }
 

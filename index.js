@@ -34,12 +34,6 @@ const  showProjects = () => {
         githubLogo.classList.add("githubLogo");
         githubLogo.setAttribute("src", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
 
-        // let thumbnailLink = document.createElement("a");
-        // thumbnailLink.classList.add("thumbnailLink");
-        // thumbnailLink.setAttribute("href", projectsList[project].liveLink)
-        // thumbnailLink.setAttribute("target", "_blank")
-        // thumbnailLink.setAttribute("rel", "noopener noreferrer")
-
         let titleLink = document.createElement("a");
         titleLink.classList.add("titleLink");
         titleLink.setAttribute("href", projectsList[project].liveLink)
@@ -51,11 +45,8 @@ const  showProjects = () => {
         projectThumbnail.setAttribute("alt", projectsList[project].title + " link");
         projectThumbnail.classList.add("projectThumbnail");
 
-        // projectCard.appendChild(thumbnailLink);
         projectCard.appendChild(projectThumbnail);
-
         projectCard.appendChild(projectHeading);
-        // projectHeading.appendChild(projectTitle);
         projectHeading.appendChild(titleLink);
         titleLink.appendChild(projectTitle);
 
@@ -70,9 +61,29 @@ const  showProjects = () => {
 
 const swapStyles = () => {
     const body = document.getElementById("body");
+    const links = document.getElementsByTagName("a:link");
     body.classList.toggle("darkTheme");
+    links.classList.toggle("darkTheme");
 }
+
+const extendStripes = () => {
+    const mainContent = document.querySelector(".mainContent");
+    const aboutEnd = document.querySelector(".aboutEnd");
+    const projectsEnd = document.querySelector(".projectsEnd");
+    const educationEnd = document.querySelector(".educationEnd");
+    const purpleStripe = document.querySelector(".vert4")
+    const greenStripe = document.querySelector(".vert3")
+    const orangeStripe = document.querySelector(".vert2")
+   
+    purpleStripe.style.height = (aboutEnd.offsetTop - mainContent.offsetTop + 10) + "px";
+    greenStripe.style.height = (projectsEnd.offsetTop - mainContent.offsetTop + 20) + "px";
+    orangeStripe.style.height = (educationEnd.offsetTop - mainContent.offsetTop + 30) + "px";
+}
+
 
 const styleToggle = document.querySelector(".styleToggle")
 styleToggle.addEventListener("click", swapStyles);
 showProjects();
+
+extendStripes();
+window.onresize = extendStripes;
