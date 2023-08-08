@@ -14,6 +14,14 @@ const  showProjects = () => {
         let projectCard = document.createElement("div");
         projectCard.classList.add("projectCard");
 
+        let projectThumbnail = document.createElement("img");
+        projectThumbnail.setAttribute("src", projectsList[project].thumbnail);
+        projectThumbnail.setAttribute("alt", projectsList[project].title + " link");
+        projectThumbnail.classList.add("projectThumbnail");
+
+        let projectText = document.createElement("div");
+        projectText.classList.add("projectText");
+
         let projectHeading = document.createElement("div");
         projectHeading.classList.add("projectHeading");
 
@@ -40,30 +48,32 @@ const  showProjects = () => {
         titleLink.setAttribute("target", "_blank")
         titleLink.setAttribute("rel", "noopener noreferrer")
   
-        let projectThumbnail = document.createElement("img");
-        projectThumbnail.setAttribute("src", projectsList[project].thumbnail);
-        projectThumbnail.setAttribute("alt", projectsList[project].title + " link");
-        projectThumbnail.classList.add("projectThumbnail");
-
         projectCard.appendChild(projectThumbnail);
-        projectCard.appendChild(projectHeading);
+        // projectCard.appendChild(projectHeading);
+        projectCard.appendChild(projectText);
+        projectText.appendChild(projectHeading);
+
         projectHeading.appendChild(titleLink);
         titleLink.appendChild(projectTitle);
 
         projectHeading.appendChild(repoLink);
         repoLink.appendChild(githubLogo);
   
-        projectCard.appendChild(projectDesc);
-       
+        // projectCard.appendChild(projectDesc);
+        projectText.appendChild(projectDesc);
+
         projectsDisplay.appendChild(projectCard);
     }
 }
 
 const swapStyles = () => {
     const body = document.getElementById("body");
-    const links = document.getElementsByTagName("a:link");
     body.classList.toggle("darkTheme");
-    links.classList.toggle("darkTheme");
+
+    // const githubLogo = document.querySelectorAll(".githubLogo");
+    // githubLogo.forEach(logo =>{
+    //     logo.classList.toggle("darkIcon");
+    // });
 }
 
 const extendStripes = () => {
@@ -79,7 +89,6 @@ const extendStripes = () => {
     greenStripe.style.height = (projectsEnd.offsetTop - mainContent.offsetTop + 20) + "px";
     orangeStripe.style.height = (educationEnd.offsetTop - mainContent.offsetTop + 30) + "px";
 }
-
 
 const styleToggle = document.querySelector(".styleToggle")
 styleToggle.addEventListener("click", swapStyles);
