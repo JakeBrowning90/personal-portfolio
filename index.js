@@ -34,23 +34,31 @@ const  showProjects = () => {
         githubLogo.classList.add("githubLogo");
         githubLogo.setAttribute("src", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
 
+        // let thumbnailLink = document.createElement("a");
+        // thumbnailLink.classList.add("thumbnailLink");
+        // thumbnailLink.setAttribute("href", projectsList[project].liveLink)
+        // thumbnailLink.setAttribute("target", "_blank")
+        // thumbnailLink.setAttribute("rel", "noopener noreferrer")
 
-        let liveLink = document.createElement("a");
-        liveLink.classList.add("liveLink");
-        liveLink.setAttribute("href", projectsList[project].liveLink)
-        liveLink.setAttribute("target", "_blank")
-        liveLink.setAttribute("rel", "noopener noreferrer")
+        let titleLink = document.createElement("a");
+        titleLink.classList.add("titleLink");
+        titleLink.setAttribute("href", projectsList[project].liveLink)
+        titleLink.setAttribute("target", "_blank")
+        titleLink.setAttribute("rel", "noopener noreferrer")
   
         let projectThumbnail = document.createElement("img");
         projectThumbnail.setAttribute("src", projectsList[project].thumbnail);
         projectThumbnail.setAttribute("alt", projectsList[project].title + " link");
         projectThumbnail.classList.add("projectThumbnail");
 
-        projectCard.appendChild(liveLink);
-        liveLink.appendChild(projectThumbnail);
+        // projectCard.appendChild(thumbnailLink);
+        projectCard.appendChild(projectThumbnail);
 
         projectCard.appendChild(projectHeading);
-        projectHeading.appendChild(projectTitle);
+        // projectHeading.appendChild(projectTitle);
+        projectHeading.appendChild(titleLink);
+        titleLink.appendChild(projectTitle);
+
         projectHeading.appendChild(repoLink);
         repoLink.appendChild(githubLogo);
   
@@ -61,7 +69,6 @@ const  showProjects = () => {
 }
 
 const swapStyles = () => {
-    console.log("Swap!")
     const body = document.getElementById("body");
     body.classList.toggle("darkTheme");
 }

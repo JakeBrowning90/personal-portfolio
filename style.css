@@ -15,6 +15,10 @@ html, body {
     background-color: #121212 ;
 }
 
+a:link, a:visited {
+    /* color: black; */
+}
+
 nav {
     margin-top: auto;
 }
@@ -47,7 +51,7 @@ header {
 }
 
 .projectCard {
-    background-color: #cae0ee;
+    background-color: #cae0ee77;
     max-width: 550px;
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -71,12 +75,12 @@ header {
     /* font-size: 25px; */
 }
 
-.liveLink {
-    grid-row: 1 / -1;
+.thumbnailLink {
+    /* grid-row: 1 / -1; */
 }
 
 .projectThumbnail {
-    /* grid-row: 1 / -1; */
+    grid-row: 1 / -1;
     height: 100px;
     max-width: 100px;
     /* object-fit: contain; */
@@ -96,7 +100,7 @@ header {
 .educationEntry {
     margin-top: 15px;
     gap: 5px;
-    background-color: #cae0ee;
+    background-color: #cae0ee77;
     max-width: 550px;
     display: flex;
     flex-direction: column;
