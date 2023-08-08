@@ -196,4 +196,5 @@ header {
 .socialBar {
     display: flex;
     gap: 10px;
+    background-color: #cae0ee77;
 }

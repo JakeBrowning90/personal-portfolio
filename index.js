@@ -71,9 +71,9 @@ const extendStripes = () => {
     const aboutEnd = document.querySelector(".aboutEnd");
     const projectsEnd = document.querySelector(".projectsEnd");
     const educationEnd = document.querySelector(".educationEnd");
-    const purpleStripe = document.querySelector(".vert4")
-    const greenStripe = document.querySelector(".vert3")
-    const orangeStripe = document.querySelector(".vert2")
+    const purpleStripe = document.querySelector(".vert4");
+    const greenStripe = document.querySelector(".vert3");
+    const orangeStripe = document.querySelector(".vert2");
    
     purpleStripe.style.height = (aboutEnd.offsetTop - mainContent.offsetTop + 10) + "px";
     greenStripe.style.height = (projectsEnd.offsetTop - mainContent.offsetTop + 20) + "px";
