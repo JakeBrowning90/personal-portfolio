@@ -45,6 +45,56 @@ header {
     justify-content: space-between;
 }
 
+.stripeBase {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.horiz {
+    flex-grow: 1;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.blueStripe {
+    background-color: #0039a6;
+}
+
+.orangeStripe {
+    background-color: #ff6319;
+}
+
+.greenStripe {
+    background-color: #6cbe45;
+}
+
+.purpleStripe {
+    background-color: #b933ad;
+}
+
+.mainCols {
+    display: flex;
+    flex-direction: row;
+}
+
+.stripeBaseVert {
+    align-self: stretch;
+    min-width: 40px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.vert {
+    flex-grow: 1;
+    justify-self: stretch;
+    /* height: 100px; */
+}
+
 .bioText, footer {
     max-width: 800px;
     white-space: pre-line;
