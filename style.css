@@ -5,7 +5,7 @@
 
 html, body {
     font-family: Inter, Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 5px;
     scroll-behavior: smooth;
     /* background-color: #f7f7f7; */
 }
@@ -37,7 +37,7 @@ a:link, a:visited {
     color: black;
 }
 
-.darkTheme a:link, .darkTheme a:visited {
+.darkTheme a:link, .darkTheme a:visited, .darkTheme i {
     color: white;
 }
 
@@ -164,7 +164,7 @@ nav {
 }
 
 .mainContent {
-    padding: 10px;
+    padding: 10px 0 0 10px;
 }
 
 .bioText, footer {
@@ -192,6 +192,16 @@ nav {
     justify-content: space-between;
     padding-left: 10px;
 }
+
+.projectLinkIcon {
+    text-decoration: none;
+    height: 100%;
+    font-size: 30px;
+}
+
+/* i {
+    font-size: large;
+} */
 
 .githubLogo {
     height: 30px;
@@ -238,7 +248,7 @@ nav {
 .socialBar {
     display: flex;
     gap: 10px;
-    background-color: #cae0ee40;
+    /* background-color: #cae0ee40; */
 }
 
 @media (max-width: 800px) {

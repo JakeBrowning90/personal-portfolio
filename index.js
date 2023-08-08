@@ -34,14 +34,18 @@ const  showProjects = () => {
         projectDesc.textContent = projectsList[project].desc;
 
         let repoLink = document.createElement("a");
+        repoLink.classList.add("projectLinkIcon");
         repoLink.setAttribute("href", projectsList[project].repoLink)
         repoLink.setAttribute("target", "_blank")
         repoLink.setAttribute("rel", "noopener noreferrer");
 
-        let githubLogo = document.createElement("img");
-        githubLogo.classList.add("githubLogo");
-        githubLogo.setAttribute("src", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
+        // let githubLogo = document.createElement("img");
+        // githubLogo.classList.add("githubLogo");
+        // githubLogo.setAttribute("src", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
 
+        let githubLogo = document.createElement("i");
+        githubLogo.classList.add("devicon-github-original");
+       
         let titleLink = document.createElement("a");
         titleLink.classList.add("titleLink");
         titleLink.setAttribute("href", projectsList[project].liveLink)
@@ -49,7 +53,7 @@ const  showProjects = () => {
         titleLink.setAttribute("rel", "noopener noreferrer")
   
         projectCard.appendChild(projectThumbnail);
-        // projectCard.appendChild(projectHeading);
+
         projectCard.appendChild(projectText);
         projectText.appendChild(projectHeading);
 
@@ -58,8 +62,7 @@ const  showProjects = () => {
 
         projectHeading.appendChild(repoLink);
         repoLink.appendChild(githubLogo);
-  
-        // projectCard.appendChild(projectDesc);
+
         projectText.appendChild(projectDesc);
 
         projectsDisplay.appendChild(projectCard);
