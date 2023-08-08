@@ -97,5 +97,5 @@ const styleToggle = document.querySelector(".styleToggle")
 styleToggle.addEventListener("click", swapStyles);
 showProjects();
 
-extendStripes();
+setTimeout(extendStripes, 20);
 window.onresize = extendStripes;

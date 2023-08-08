@@ -229,7 +229,7 @@ nav {
     margin-top: 15px;
     gap: 5px;
     /* background-color: #cae0ee40; */
-    max-width: 550px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
 }
