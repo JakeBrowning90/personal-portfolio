@@ -18,7 +18,7 @@ let projectsList = [
     repoLink: "https://github.com/JakeBrowning90/inventory-application-2",
     liveLink: "https://inventory-application-2.fly.dev/",
     thumbnail: "img/musicAppThumbnail.jpg",
-    desc: "An inventory management app built using Node.js, Express, and PostgreSQL. Authenticated users can create, update, and delete artists and albums from the database.",
+    desc: "An inventory management app built using Express, Node.js, PostgreSQL, and Cloudinary. Authenticated users can create, update, and delete artists and albums from the database.",
   },
   {
     title: "Messaging App",
