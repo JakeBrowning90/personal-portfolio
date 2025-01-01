@@ -7,6 +7,13 @@ let projectsList = [
 //     desc: "",
 //   },
 //   {
+//     title: "File Uploader",
+//     repoLink: "https://github.com/JakeBrowning90/file-uploader",
+//     liveLink: "https://file-uploader-empty-sun-8023.fly.dev/",
+//     thumbnail: "",
+//     desc: "",
+//   },
+//   {
 //     title: "Micro Blog",
 //     repoLink: "https://github.com/JakeBrowning90/members-only-2",
 //     liveLink: "https://members-only-2-frosty-moon-5954.fly.dev/",
