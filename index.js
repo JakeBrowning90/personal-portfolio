@@ -6,13 +6,13 @@ let projectsList = [
 //     thumbnail: "",
 //     desc: "",
 //   },
-//   {
-//     title: "File Uploader",
-//     repoLink: "https://github.com/JakeBrowning90/file-uploader",
-//     liveLink: "https://file-uploader-empty-sun-8023.fly.dev/",
-//     thumbnail: "",
-//     desc: "",
-//   },
+  {
+    title: "File Uploader",
+    repoLink: "https://github.com/JakeBrowning90/file-uploader",
+    liveLink: "https://file-uploader-empty-sun-8023.fly.dev/",
+    thumbnail: "img/fileUploaderThumbnail.jpg",
+    desc: "An file hosting app built using Express, Node.js, Prisma ORM, and Cloudinary. Authenticated users can upload files, sort them into custom folders, and search their collection by entry name.",
+  },
 //   {
 //     title: "Micro Blog",
 //     repoLink: "https://github.com/JakeBrowning90/members-only-2",
@@ -46,7 +46,7 @@ let projectsList = [
     repoLink: "https://github.com/JakeBrowning90/blog-public-frontend",
     liveLink: "https://blog-public-frontend.fly.dev/",
     thumbnail: "img/blogThumbnail.jpg",
-    desc: "A MERN blogging app using RESTful API across two front ends. A public site displays posts and comments, and a private site manages post content with a rich text editor. Editing actions are controlled by JWT authentication. ",
+    desc: "A MERN blogging app using RESTful API across two front ends. A public site displays posts and comments, and a private site manages post content with a rich text editor. Editing actions are controlled by JWT authentication.",
   },
 //   {
 //     title: "Art Gallery",
@@ -97,13 +97,13 @@ let projectsList = [
     thumbnail: "img/todoThumbnail.jpg",
     desc: "Add, categorize, edit, and delete tasks on a personal list. The list also persists on a user’s machine using the localStorage property.",
   },
-  {
-    title: "Tic-Tac-Toe",
-    repoLink: "https://github.com/JakeBrowning90/tic-tac-toe",
-    liveLink: "https://jakebrowning90.github.io/tic-tac-toe/",
-    thumbnail: "img/tictactoeThumbnail.jpg",
-    desc: "Play a JavaScript version of the old-fashioned game against your friend.",
-  },
+  // {
+  //   title: "Tic-Tac-Toe",
+  //   repoLink: "https://github.com/JakeBrowning90/tic-tac-toe",
+  //   liveLink: "https://jakebrowning90.github.io/tic-tac-toe/",
+  //   thumbnail: "img/tictactoeThumbnail.jpg",
+  //   desc: "Play a JavaScript version of the old-fashioned game against your friend.",
+  // },
 ];
 
 const showProjects = () => {
